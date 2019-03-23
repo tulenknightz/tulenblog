@@ -37,9 +37,4 @@ $(document).ready(function () {
 
     });
 
-    $.ajax(home+"pages/menu-home.html", {
-        success: function(response){
-            $('.container-fluid').html(response).slideDown();
-        }
-    });
 })
