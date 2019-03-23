@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-
-{% for post in site.posts %}
-    <div class="post">
-        <h3><a href="{{site.site_url}}{{ post.url }}">{{post.title}}</a></h3>
-    </div>
-{% endfor %}
+<script>
+    $(document).ready(function(){
+        $.ajax(home+"pages/menu-home.html", {
+             success: function(response){
+             $('.container-fluid').html(response).slideDown();
+            }
+        });
+    }
+</script>
