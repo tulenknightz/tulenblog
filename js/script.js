@@ -21,7 +21,7 @@ $(document).ready(function () {
             });
             $(this).attr('data-active', 'true');
             $('.content').css('display', 'hide');
-            $.ajax('/pages/' + $(this).attr('class') + '.html', {
+            $.ajax('/tulenblog/pages/' + $(this).attr('class') + '.html', {
                 success: function (response) {
                     $('.content').fadeOut(500);
                     $('.container-fluid').html(response).slideDown();
