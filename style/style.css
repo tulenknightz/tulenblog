@@ -1,0 +1,94 @@
+body{
+    font-size: 20px;
+}
+
+
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Top nav style*/
+.top-nav{
+    display: none;
+}
+
+
+/*End top-nav*/
+
+/*left-slidebar style*/
+
+#btn-hidemenu{
+    display: none;
+}
+
+.left-slidebar{
+    display: block;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    background: black;
+    text-align: center;
+}
+
+.left-slidebar img{
+    width: 40%;
+    border-radius: 50%;
+    margin: 1rem;
+    cursor: progress;
+    transition: 0.5s;
+}
+
+.left-slidebar img:hover{
+    width: 60%;
+}
+
+.left-slidebar p{
+    font-family: 'Baloo Chettan', cursive;
+    color: white;
+}
+
+.menu{
+    padding: 0;
+    text-align: left;
+}
+
+.menu li{
+    position: relative;
+    list-style: none;
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-transform: capitalize;
+    color: white;
+    padding: 1rem;
+    background: red;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: green;
+}
+
+.menu li[data-active="true"]{
+    background:orange;
+}
+
+
+
+.menu li i{
+    margin: 0 1rem;
+}
+
+
+/*End left-slidebar style*/
+
+.container-fluid{
+    width: 80%;
+    height: 100%;
+    margin-left: 0;
+    background: white;
+    float: right;
+    position: relative;
+}
