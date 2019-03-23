@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     });
 
-    $.ajax('/pages/menu-home.html', {
+    $.ajax('/tulenblog/pages/menu-home.html', {
         success: function(response){
             $('.container-fluid').html(response).slideDown();
         }
