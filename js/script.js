@@ -21,7 +21,7 @@ $(document).ready(function () {
             });
             $(this).attr('data-active', 'true');
             $('.content').css('display', 'hide');
-            $.ajax('{{site.site_url}}/pages/' + $(this).attr('class') + '.html', {
+            $.ajax("{{site.site_url}}/pages/" + $(this).attr('class') + ".html", {
                 success: function (response) {
                     $('.content').fadeOut(500);
                     $('.container-fluid').html(response).slideDown();
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     });
 
-    $.ajax('{{site.site_url}}/pages/menu-home.html', {
+    $.ajax("{{site.site_url}}/pages/menu-home.html", {
         success: function(response){
             $('.container-fluid').html(response).slideDown();
         }
