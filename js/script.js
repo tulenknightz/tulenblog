@@ -27,6 +27,7 @@ $(document).ready(function () {
                     $('.container-fluid').html(response).slideDown();
                     
                 }
+                console.log({{site.site_url}}+"/pages/" + $(this).attr('class') + ".html");
                 
             })
             if($('#btn-showmenu').css('display')=='block') hideMenu();
